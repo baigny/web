@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="js/angular.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/user.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/content.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body ng-app="exampleApp">
+        <header ng-controller="userCtrl">Welcome {{user}}!</header>
+        <nav ng-controller="menuCtrl">
+            <h2>Menu</h2>
+            <ul>
+                <li ng-repeat="link in links">{{link}}</li>
+            </ul>
+        </nav>
+        <article ng-controller="contentCtrl">
+            <h1>{{title}}</h1>
+            <hr />
+            <p>{{paragraph}}</p>
+            <small >by {{author}}</small>
+        </article>
+    </body>
+</html>

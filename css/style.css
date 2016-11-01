@@ -1,0 +1,13 @@
+body {
+    width: 500px;
+}
+
+nav {
+    float: left;
+    width: 30%;
+}
+
+article {
+    margin-left: 30%;
+    width: 70%;
+}
